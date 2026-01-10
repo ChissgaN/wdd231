@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+  nav.nav-menu ul {
+    display: flex !important; 
+    flex-direction: row;
+    gap: 2rem;
+    background: none;
+  }
+
+  nav.nav-menu li a:hover {
+    background: none;
+    color: #0077cc;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  section {
+    margin-bottom: 0;
+  }
+
+  .business-cards {
+    flex-direction: row;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
