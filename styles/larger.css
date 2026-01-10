@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   nav.nav-menu ul {
-    display: flex !important; 
+    display: flex; 
     flex-direction: row;
     gap: 2rem;
     background: none;
@@ -27,5 +27,18 @@
 
   .hamburger {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .business-cards {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .course-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
   }
 }

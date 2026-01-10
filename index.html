@@ -11,6 +11,11 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/courses.js" defer></script>
@@ -56,11 +61,11 @@
     <section>
       <h2>My Courses</h2>
       <div id="courses-container"></div>
-      <div>
-        <button onclick="displayCourses('all')">All</button>
-        <button onclick="displayCourses('WDD')">WDD</button>
-        <button onclick="displayCourses('CSE')">CSE</button>
-      </div>
+      <div class="course-buttons">
+        <button id="btn-all">All</button>
+        <button id="btn-wdd">WDD</button>
+        <button id="btn-cse">CSE</button>
+    </div>
     </section>
 
   </main>

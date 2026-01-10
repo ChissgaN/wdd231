@@ -71,3 +71,24 @@ section {
 * {
   box-sizing: border-box;
 }
+
+/* Course card base style */
+.course-card {
+  background-color: #f8f8f8;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid transparent;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.course-card.completed {
+  background-color: #e0f7fa;
+  font-weight: bold;
+  border-left: 4px solid #0077cc;
+}
+
+.total-credits {
+  font-weight: bold;
+  margin-top: 1rem;
+}
