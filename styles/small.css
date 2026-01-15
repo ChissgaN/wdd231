@@ -26,6 +26,12 @@ header .logo {
   cursor: pointer;
 }
 
+.nav-menu a.active {
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+}
+
 nav.nav-menu ul {
   display: none;
   flex-direction: column;
