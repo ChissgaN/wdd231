@@ -1,0 +1,166 @@
+/* ---------- Global ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: #222;
+  background-color: #f8f8f8;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 50px;
+}
+
+header h1,
+header span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ---------- Navigation ---------- */
+.hamburger {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  background-color: #005fa3;
+}
+
+.nav-menu ul.show {
+  display: flex;
+}
+
+.nav-menu a {
+  color: white;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  background-color: #003f6b;
+}
+
+/* ---------- Main ---------- */
+main {
+  padding: 1rem;
+}
+
+h2 {
+  margin-top: 0;
+  color: #0077cc;
+}
+
+/* ---------- Directory Controls ---------- */
+.directory-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.directory-controls button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.directory-controls button:hover {
+  background-color: #005fa3;
+}
+
+/* ---------- Members Grid/List ---------- */
+#members {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-view {
+  grid-template-columns: 1fr;
+}
+
+.list-view {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Member Cards ---------- */
+.member-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.member-card h3 {
+  margin: 0.5rem 0;
+}
+
+.member-card a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
+}
+
+.membership {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #0077cc;
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}

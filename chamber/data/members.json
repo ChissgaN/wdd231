@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Xela Tech Solutions",
+      "address": "10a Avenida 5-30, Quetzaltenango",
+      "phone": "+502 7761 1234",
+      "website": "https://xelatech.com",
+      "image": "tech.webp",
+      "membership": 3,
+      "description": "Technology services and digital solutions."
+    },
+    {
+      "name": "Café Los Altos",
+      "address": "Zona 1, Quetzaltenango",
+      "phone": "+502 7765 4567",
+      "website": "https://cafelosaltos.gt",
+      "image": "coffee.webp",
+      "membership": 2,
+      "description": "Local coffee shop and artisan roasters."
+    },
+    {
+      "name": "Quetzal Marketing",
+      "address": "Zona 3, Quetzaltenango",
+      "phone": "+502 7768 9876",
+      "website": "https://quetzalmarketing.gt",
+      "image": "marketing.webp",
+      "membership": 3,
+      "description": "Marketing and branding agency."
+    },
+    {
+      "name": "Ferretería El Constructor",
+      "address": "Zona 7, Quetzaltenango",
+      "phone": "+502 7770 1122",
+      "website": "https://elconstructor.gt",
+      "image": "hardware.webp",
+      "membership": 1,
+      "description": "Construction materials and tools."
+    },
+    {
+      "name": "Clínica Dental Sonrisa",
+      "address": "Zona 9, Quetzaltenango",
+      "phone": "+502 7773 4455",
+      "website": "https://sonrisadental.gt",
+      "image": "dental.webp",
+      "membership": 2,
+      "description": "Professional dental services."
+    },
+    {
+      "name": "Academia XelaFit",
+      "address": "Zona 5, Quetzaltenango",
+      "phone": "+502 7776 7788",
+      "website": "https://xelafit.gt",
+      "image": "fit.webp",
+      "membership": 1,
+      "description": "Fitness and wellness center."
+    },
+    {
+      "name": "Hotel Monte Verde",
+      "address": "Salida a Olintepeque",
+      "phone": "+502 7780 9900",
+      "website": "https://hotelmonteverde.gt",
+      "image": "hotel.webp",
+      "membership": 3,
+      "description": "Comfortable lodging for visitors."
+    }
+  ]
+}
