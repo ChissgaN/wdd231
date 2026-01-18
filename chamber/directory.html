@@ -8,40 +8,34 @@
 
   <title>Directory | Quetzaltenango Chamber of Commerce</title>
 
-  <!-- Social Media Meta -->
   <meta property="og:title" content="Quetzaltenango Chamber of Commerce Directory">
   <meta property="og:description" content="Discover local businesses that are members of the Quetzaltenango Chamber of Commerce.">
   <meta property="og:image" content="images/chamber-social.webp">
   <meta property="og:url" content="https://chissgan.github.io/wdd231/chamber/directory.html">
+  <meta property="og:image" content="https://chissgan.github.io/wdd231/chamber/images/og-directory.webp">
 
-  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- JS -->
   <script src="scripts/directory.js" defer></script>
-  <script src="scripts/date.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
 </head>
 
 <body>
 
-  <!-- HEADER -->
   <header>
     <img src="images/logo.webp" alt="Quetzaltenango Chamber of Commerce Logo" class="logo">
     <h1>Quetzaltenango Chamber of Commerce</h1>
     <button class="hamburger" aria-label="Open navigation menu">☰</button>
   </header>
 
-  <!-- NAVIGATION -->
   <nav class="nav-menu">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -51,23 +45,18 @@
     </ul>
   </nav>
 
-  <!-- MAIN CONTENT -->
   <main>
     <h2>Business Directory</h2>
 
-    <!-- View Toggle -->
     <section class="view-controls">
       <button id="gridBtn" aria-label="Grid view">Grid</button>
       <button id="listBtn" aria-label="List view">List</button>
     </section>
 
-    <!-- Members Container -->
     <section id="members" class="grid-view">
-      <!-- Members loaded dynamically -->
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <p>
       📍 Quetzaltenango, Guatemala <br>
@@ -75,11 +64,10 @@
       ✉️ info@quetzaltenangochamber.org
     </p>
 
-    <p>
-      &copy; <span id="year"></span> Jairo Noodli Castro Castillo | WDD 231
-    </p>
+    <p> Jairo Noodli Castro Castillo | WDD 231 </p>
 
-    <p id="lastModified"></p>
+    <p>© <span id="currentYear"></span> Quetzaltenango Chamber of Commerce</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
 </body>

@@ -30,7 +30,6 @@ function displayMembers(members) {
   });
 }
 
-/* GRID VIEW */
 gridBtn.addEventListener("click", () => {
   membersContainer.classList.add("grid-view");
   membersContainer.classList.remove("list-view");
@@ -40,7 +39,6 @@ gridBtn.addEventListener("click", () => {
   });
 });
 
-/* LIST VIEW (NO IMAGES) */
 listBtn.addEventListener("click", () => {
   membersContainer.classList.add("list-view");
   membersContainer.classList.remove("grid-view");
