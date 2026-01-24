@@ -11,93 +11,124 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/courses.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+
 </head>
+
 <body>
 
-  <header>
-    <img src="images/logo.webp" alt="Flag of Quetzaltenango" class="logo">
-    <span class="author-name">Jairo Noodli Castro Castillo</span>
-    <button class="hamburger" aria-label="Menu">☰</button>
-  </header>
+<header>
+  <img src="images/logo.webp" alt="Flag of Quetzaltenango" class="logo">
+  <span class="author-name">Jairo Noodli Castro Castillo</span>
+  <button class="hamburger" aria-label="Menu">☰</button>
+</header>
 
-  <nav class="nav-menu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Chamber</a></li>
-      <li><a href="#">Final</a></li>
-    </ul>
-  </nav>
+<nav class="nav-menu">
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="/chamber/directory.html">Chamber</a></li>
+    <li><a href="#">Final</a></li>
+  </ul>
+</nav>
 
-  <main>
-  <h1>Welcome to the Quetzaltenango Chamber of Commerce</h1>
+<main>
+<section class="hero">
+  <img src="images/hero.webp" alt="View of Quetzaltenango city" class="hero-img">
+  <a href="/chamber/directory.html" class="cta">Join the Chamber</a>
+</section>
 
-  <div class="layout">
+<h1>Welcome to the Quetzaltenango Chamber of Commerce</h1>
 
-    <div class="main-content">
-      <section>
-        <h2>About Us</h2>
-        <p>
-          The Quetzaltenango Chamber of Commerce works to strengthen the interests
-          of local businesses, foster networking, and support the community.
-        </p>
-      </section>
+<section class="current-events">
+  <h2>Current Events</h2>
 
-      <section>
-        <h2>Featured Businesses</h2>
-        <div class="business-cards">
-          <div class="card">Business 1</div>
-          <div class="card">Business 2</div>
-          <div class="card">Business 3</div>
-        </div>
-      </section>
-    </div>
+  <article class="event">
+    <h3>Business Networking Night</h3>
+    <p>Join local entrepreneurs this Friday at Central Plaza for an evening of networking and collaboration.</p>
+  </article>
 
-    <aside class="sidebar">
-      <section>
-        <h2>Events and Community</h2>
-        <p>
-          Upcoming events, local news, and activities of interest for members
-          and visitors.
-        </p>
-      </section>
+  <article class="event">
+    <h3>Small Business Workshop</h3>
+    <p>A free workshop on digital marketing strategies for small businesses. Saturday at the Chamber Hall.</p>
+  </article>
+</section>
 
-      <section>
-        <h2>My Courses</h2>
+<div class="layout">
 
-        <div id="courses-container"></div>
-        <p id="total-credits" class="total-credits"></p>
+  <div class="main-content">
+    <section>
+      <h2>About Us</h2>
+      <p>
+        The Quetzaltenango Chamber of Commerce works to strengthen the interests
+        of local businesses, foster networking, and support the community.
+      </p>
+    </section>
 
-        <div class="course-buttons">
-          <button id="btn-all">All</button>
-          <button id="btn-wdd">WDD</button>
-          <button id="btn-cse">CSE</button>
-        </div>
-      </section>
-
-    </aside>
-
+    <section>
+      <h2>Featured Businesses</h2>
+      <div class="business-cards">
+        <div class="card">Business 1</div>
+        <div class="card">Business 2</div>
+        <div class="card">Business 3</div>
+      </div>
+    </section>
   </div>
-  </main>
 
+  <aside class="sidebar">
 
-  <footer>
-    <p>
-      <a href="https://github.com/ChissgaN/wdd231" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/jairo-noodli-castro-castillo-a9840a2b0/" target="_blank">LinkedIn</a>
-    </p>
-    <p id="copyright">
-      &copy; <span id="year"></span> Jairo Noodli Castro Castillo, Quetzaltenango, Guatemala
-    </p>
-    <p id="lastModified"></p>
-  </footer>
+    <section>
+      <h2>Events and Community</h2>
+      <p>
+        Upcoming events, local news, and activities of interest for members
+        and visitors.
+      </p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+
+      <p>
+        Current temperature in Quetzaltenango:
+        <span id="current-temp"></span>°F
+      </p>
+
+      <figure>
+        <img id="weather-icon" src="" alt="">
+        <figcaption></figcaption>
+      </figure>
+
+      <h3>3-Day Forecast</h3>
+      <div id="forecast"></div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Company Spotlights</h2>
+      <div id="spotlight-container" class="spotlight-container"></div>
+    </section>
+
+  </aside>
+
+</div>
+</main>
+
+<footer>
+  <p>
+    <a href="https://github.com/ChissgaN/wdd231" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com/in/jairo-noodli-castro-castillo-a9840a2b0/" target="_blank">LinkedIn</a>
+  </p>
+  <p id="copyright">
+    &copy; <span id="year"></span> Jairo Noodli Castro Castillo, Quetzaltenango, Guatemala
+  </p>
+  <p id="lastModified"></p>
+</footer>
 
 </body>
 </html>

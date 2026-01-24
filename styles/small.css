@@ -98,3 +98,81 @@ section {
   font-weight: bold;
   margin-top: 1rem;
 }
+
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cta {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #004aad;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.cta:hover {
+  background-color: #002f6c;
+}
+
+.current-events {
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+.current-events h2 {
+  text-align: center;
+}
+
+.event {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 6px;
+}
+
+#forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.forecast-item {
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+  width: 30%;
+}
+
+.spotlight-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.spotlight-card {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 6px;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.spotlight-card img {
+  max-width: 100px;
+  margin-bottom: 0.5rem;
+}

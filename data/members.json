@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Tech Solutions",
+    "logo": "chamber/images/tech.webp",
+    "phone": "555-1234",
+    "address": "123 Main St, Quetzaltenango",
+    "website": "https://techsolutions.example.com",
+    "membership": "Gold"
+  },
+  {
+    "name": "Green Gardens",
+    "logo": "chamber/images/marketing.webp",
+    "phone": "555-5678",
+    "address": "456 Oak Ave, Quetzaltenango",
+    "website": "https://greengardens.example.com",
+    "membership": "Silver"
+  },
+  {
+    "name": "Coffee Roasters",
+    "logo": "chamber/images/coffee.webp",
+    "phone": "555-9012",
+    "address": "789 Pine Rd, Quetzaltenango",
+    "website": "https://coffeeroasters.example.com",
+    "membership": "Bronze"
+  }
+]
