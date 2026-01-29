@@ -2,7 +2,7 @@ const spotlightContainer = document.querySelector('#spotlight-container');
 
 async function loadSpotlights() {
   try {
-    const response = await fetch('../data/members.json');
+    const response = await fetch('https://chissgan.github.io/wdd231/data/members.json');
     if (!response.ok) throw Error('Could not fetch members.json');
     
     const members = await response.json();
