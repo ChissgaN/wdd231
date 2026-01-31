@@ -1,19 +1,8 @@
-:root {
-  --primary: #1e4d7b;
-  --secondary: #f4a261;
-  --light: #f5f7fa;
-  --dark: #222;
-  --radius: 10px;
-}
-
-main {
-  padding: 2rem;
-}
-
 .join-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  padding: 2rem;
 }
 
 form {
