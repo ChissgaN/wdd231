@@ -1,7 +1,17 @@
+:root {
+  --primary: #1e4d7b;
+  --secondary: #f4a261;
+  --light: #f5f7fa;
+  --dark: #222;
+  --radius: 10px;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: system-ui, sans-serif;
   margin: 0;
   padding: 0;
+  color: var(--dark);
+  background-color: var(--light);
 }
 
 header, nav, main, footer {
@@ -9,9 +19,12 @@ header, nav, main, footer {
 }
 
 header {
+  background-color: var(--primary);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
 }
 
 header .logo {
@@ -26,19 +39,13 @@ header .logo {
   cursor: pointer;
 }
 
-.nav-menu a.active {
-  background-color: #0077cc;
-  color: white;
-  font-weight: bold;
-}
-
 nav.nav-menu ul {
   display: none;
   flex-direction: column;
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(30, 77, 123, 0.95);
 }
 
 nav.nav-menu ul.show {
@@ -50,12 +57,30 @@ nav.nav-menu li a {
   padding: 0.75rem 1rem;
   color: black;
   display: block;
-  transition: background 0.3s, color 0.3s;
+  transition: color 0.3s ease;
+  position: relative;
+  font-weight: 600;
 }
 
-nav.nav-menu li a:hover {
-  background-color: #0077cc;
-  color: white;
+nav.nav-menu li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
+}
+
+nav.nav-menu li a:hover::after,
+nav.nav-menu li a.active::after {
+  width: 100%;
+}
+
+nav.nav-menu li a:hover,
+nav.nav-menu li a.active {
+  color: var(--secondary);
 }
 
 section {
@@ -175,4 +200,27 @@ section {
 .spotlight-card img {
   max-width: 100px;
   margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--secondary);
+  font-weight: bold;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0.3rem 0;
 }
