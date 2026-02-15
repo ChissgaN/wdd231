@@ -1,0 +1,139 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "genre": "Action-Adventure",
+      "platform": "Nintendo Switch",
+      "year": 2017,
+      "description": "An open-world adventure game where players explore the vast kingdom of Hyrule.",
+      "image": "zelda.webp"
+    },
+    {
+      "id": 2,
+      "title": "God of War",
+      "genre": "Action",
+      "platform": "PlayStation 5",
+      "year": 2018,
+      "description": "A mythological action game following Kratos and his son Atreus on a journey through Norse realms.",
+      "image": "godofwar.webp"
+    },
+    {
+      "id": 3,
+      "title": "Halo Infinite",
+      "genre": "Shooter",
+      "platform": "Xbox Series X",
+      "year": 2021,
+      "description": "A first-person shooter featuring Master Chief in an expansive sci-fi campaign.",
+      "image": "halo.webp"
+    },
+    {
+      "id": 4,
+      "title": "Elden Ring",
+      "genre": "RPG",
+      "platform": "PC",
+      "year": 2022,
+      "description": "A dark fantasy role-playing game with an open-world environment and challenging combat.",
+      "image": "eldenring.webp"
+    },
+    {
+      "id": 5,
+      "title": "Super Mario Odyssey",
+      "genre": "Platformer",
+      "platform": "Nintendo Switch",
+      "year": 2017,
+      "description": "Mario travels across kingdoms using his magical hat to rescue Princess Peach.",
+      "image": "marioodyssey.webp"
+    },
+    {
+      "id": 6,
+      "title": "Red Dead Redemption 2",
+      "genre": "Action-Adventure",
+      "platform": "PC",
+      "year": 2018,
+      "description": "An epic tale of life in America’s unforgiving heartland featuring outlaws and survival.",
+      "image": "redredemption.webp"
+    },
+    {
+      "id": 7,
+      "title": "Cyberpunk 2077",
+      "genre": "RPG",
+      "platform": "PlayStation 5",
+      "year": 2020,
+      "description": "A futuristic open-world RPG set in Night City with deep customization and story choices.",
+      "image": "cyberpunk.webp"
+    },
+    {
+      "id": 8,
+      "title": "Forza Horizon 5",
+      "genre": "Racing",
+      "platform": "Xbox Series X",
+      "year": 2021,
+      "description": "An open-world racing game set in Mexico with realistic driving mechanics.",
+      "image": "forzahorizon.webp"
+    },
+    {
+      "id": 9,
+      "title": "The Witcher 3: Wild Hunt",
+      "genre": "RPG",
+      "platform": "PC",
+      "year": 2015,
+      "description": "A story-driven RPG where players control Geralt of Rivia, a monster hunter for hire.",
+      "image": "witcher.webp"
+    },
+    {
+      "id": 10,
+      "title": "Animal Crossing: New Horizons",
+      "genre": "Simulation",
+      "platform": "Nintendo Switch",
+      "year": 2020,
+      "description": "A relaxing life-simulation game focused on building and customizing an island community.",
+      "image": "animalcrossing.webp"
+    },
+    {
+      "id": 11,
+      "title": "Spider-Man: Miles Morales",
+      "genre": "Action",
+      "platform": "PlayStation 5",
+      "year": 2020,
+      "description": "An action-packed superhero game following Miles Morales as Spider-Man.",
+      "image": "spiderman.webp"
+    },
+    {
+      "id": 12,
+      "title": "Minecraft",
+      "genre": "Sandbox",
+      "platform": "PC",
+      "year": 2011,
+      "description": "A creative sandbox game where players build and explore block-based worlds.",
+      "image": "minecraft.webp"
+    },
+    {
+      "id": 13,
+      "title": "Call of Duty: Modern Warfare II",
+      "genre": "Shooter",
+      "platform": "Xbox Series X",
+      "year": 2022,
+      "description": "A military shooter with intense multiplayer and cinematic campaign missions.",
+      "image": "cod.webp"
+    },
+    {
+      "id": 14,
+      "title": "Final Fantasy VII Remake",
+      "genre": "RPG",
+      "platform": "PlayStation 5",
+      "year": 2020,
+      "description": "A modern retelling of the classic RPG featuring Cloud Strife and the city of Midgar.",
+      "image": "finalfantasy.webp" 
+    },
+    {
+      "id": 15,
+      "title": "Hades",
+      "genre": "Roguelike",
+      "platform": "PC",
+      "year": 2020,
+      "description": "A fast-paced action roguelike game based on Greek mythology.",
+      "image": "hades.webp"
+    }
+  ]
+}

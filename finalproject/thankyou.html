@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for suggesting a game">
+  <meta name="author" content="Jairo Noodli Castro Castillo">
+  <title>Video Game Library | Thank You</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/thankyou.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Video Game Library</h1>
+  <button id="menu" aria-label="Open navigation menu">☰</button>
+</header>
+
+<nav class="navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="catalog.html">Catalog</a></li>
+    <li><a href="suggest.html">Suggest a Game</a></li>
+  </ul>
+</nav>
+
+<main class="thanks-container">
+  <section class="thanks-card">
+    <h2>Thank you for your suggestion! 🎉</h2>
+
+    <p><strong>Game Title:</strong> <span id="title"></span></p>
+    <p><strong>Genre:</strong> <span id="genre"></span></p>
+    <p><strong>Platform:</strong> <span id="platform"></span></p>
+    <p><strong>Release Year:</strong> <span id="year"></span></p>
+    <p><strong>Description:</strong> <span id="description"></span></p>
+
+    <a href="catalog.html" class="back-btn">Back to Catalog</a>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Jairo Noodli Castro Castillo | Video Game Library</p>
+</footer>
+
+<script src="scripts/date.js"></script>
+<script src="scripts/thankyou.js"></script>
+</body>
+</html>

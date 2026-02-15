@@ -1,0 +1,290 @@
+/* ========== ROOT VARIABLES ========== */
+:root {
+  --primary-color: #1e293b;
+  --secondary-color: #f1f5f9;
+  --accent-color: #22c55e;
+  --text-color: #0f172a;
+  --light-text: #ffffff;
+
+  --font-heading: "Orbitron", sans-serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+/* ========== GENERAL ========== */
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+main {
+  padding: 1rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+}
+
+/* ========== FILTER AREA ========== */
+.catalog-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+.catalog-controls label {
+  font-family: var(--font-heading);
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.catalog-controls select {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 2px solid var(--accent-color);
+  border-radius: 6px;
+  background-color: white;
+  color: var(--text-color);
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.catalog-controls select:hover {
+  border-color: #16a34a;
+}
+
+.catalog-controls select:focus {
+  outline: none;
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+/* ========== GRID LAYOUT ========== */
+.games-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* ========== CARD ========== */
+.game-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: auto;
+  min-height: 350px;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(34, 197, 94, 0.2);
+}
+
+.game-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* ========== CARD CONTENT ========== */
+.game-card h3 {
+  margin: 0.7rem 1rem 0.3rem 1rem;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.game-card p {
+  margin: 0.3rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  flex-grow: 1;
+}
+
+.game-card p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+/* ========== BUTTON ========== */
+.game-card button {
+  margin: 0.8rem 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--accent-color);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.game-card button:hover {
+  background-color: #16a34a;
+  transform: translateY(-2px);
+}
+
+/* ========== TABLET ========== */
+@media (min-width: 600px) {
+  .games-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========== DESKTOP ========== */
+@media (min-width: 900px) {
+  .games-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .catalog-controls {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .catalog-controls label {
+    margin-right: 0;
+  }
+}
+
+/* ========== GAME MODAL DIALOG ========== */
+.game-modal {
+  max-width: 600px;
+  width: 90%;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  overflow: hidden;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.game-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.modal-close-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-game-header {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.modal-game-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-game-body {
+  padding: 2rem;
+  background-color: white;
+}
+
+.modal-game-body h2 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  margin: 0 0 1rem 0;
+  font-size: 1.8rem;
+}
+
+.game-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.info-value {
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.modal-game-body p {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+}

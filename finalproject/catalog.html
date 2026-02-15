@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our video game catalog by platform and genre.">
+  <meta name="author" content="Jairo Noodli Castro Castillo">
+
+  <meta property="og:title" content="Video Game Library - Catalog">
+  <meta property="og:description" content="Explore a catalog of video games loaded dynamically from JSON data.">
+  <meta property="og:image" content="images/og-image.webp">
+  <meta property="og:url" content="https://chissgan.github.io/wdd231/project/catalog.html">
+
+  <title>Video Game Library | Catalog</title>
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/catalog.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/games.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Video Game Library</h1>
+  <button id="menu" aria-label="Open navigation menu">☰</button>
+</header>
+
+<nav class="navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="catalog.html" class="active">Catalog</a></li>
+    <li><a href="suggest.html">Suggest a Game</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <section class="catalog-controls">
+    <h2>Game Catalog</h2>
+
+    <label for="platformFilter">Filter by platform:</label>
+    <select id="platformFilter">
+      <option value="all">All Platforms</option>
+      <option value="PC">PC</option>
+      <option value="PlayStation 5">PlayStation 5</option>
+      <option value="Xbox Series X">Xbox Series X</option>
+      <option value="Nintendo Switch">Nintendo Switch</option>
+    </select>
+  </section>
+
+  <section id="games-container" class="games-grid">
+    <!-- Game cards will be created here dynamically -->
+  </section>
+
+</main>
+
+<!-- Game Details Modal -->
+<dialog id="gameModal" class="game-modal">
+  <div class="modal-content">
+    <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+    <div class="modal-game-header">
+      <img id="modalGameImage" src="" alt="Game" class="modal-game-image">
+    </div>
+    <div class="modal-game-body">
+      <h2 id="modalGameTitle"></h2>
+      <div class="game-info">
+        <div class="info-item">
+          <span class="info-label">Genre</span>
+          <span class="info-value" id="modalGameGenre"></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Platform</span>
+          <span class="info-value" id="modalGamePlatform"></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Release Year</span>
+          <span class="info-value" id="modalGameYear"></span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">ID</span>
+          <span class="info-value" id="modalGameId"></span>
+        </div>
+      </div>
+      <p id="modalGameDescription"></p>
+    </div>
+  </div>
+</dialog>
+
+<footer>
+  <p>
+    <a href="attributions.html">Attributions</a> |
+    <a href="https://github.com/ChissgaN/wdd231" target="_blank">GitHub</a>
+  </p>
+
+  <p>
+    &copy; <span id="year"></span> Jairo Noodli Castro Castillo | Video Game Library
+  </p>
+
+  <p>
+    <a href="https://youtube.com" target="_blank">Project Video</a>
+  </p>
+</footer>
+
+<script src="scripts/date.js"></script>
+
+</body>
+</html>

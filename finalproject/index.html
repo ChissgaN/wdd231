@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Video Game Library is an interactive website where users can explore a catalog of video games by platform, genre, and release year.">
+  <meta name="author" content="Jairo Noodli Castro Castillo">
+
+  <meta property="og:title" content="Video Game Library">
+  <meta property="og:description" content="Explore a dynamic catalog of video games with detailed information loaded from data files.">
+  <meta property="og:image" content="images/og-image.webp">
+  <meta property="og:url" content="https://chissgan.github.io/wdd231/project/index.html">
+
+  <title>Video Game Library</title>
+
+  <!-- <link rel="icon" href="images/favicon.ico"> -->
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/modal.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <!-- ADD LOGO IMAGE HERE LATER -->
+  <!-- <img src="images/logo.webp" alt="Video Game Library Logo" class="logo"> -->
+
+  <h1>Video Game Library</h1>
+  <button id="menu" aria-label="Open navigation menu">☰</button>
+</header>
+
+<nav class="navigation">
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="catalog.html">Catalog</a></li>
+    <li><a href="suggest.html">Suggest a Game</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <section class="intro">
+    <h2>Welcome to the Video Game Library</h2>
+    <p>
+      Discover a curated collection of video games organized by platform,
+      genre, and release year. This library allows you to explore game details
+      and learn more about your favorite titles.
+    </p>
+    <a href="catalog.html" class="cta-button">Explore the Catalog</a>
+  </section>
+
+  <section class="featured">
+    <h2>Know the best platforms to enjoy your games</h2>
+    <div class="game-grid">
+
+      <article class="game-card" data-platform="ps5">
+        <img src="images/main/ps5.webp" alt="PlayStation 5" loading="lazy">
+        <h3>PlayStation 5</h3>
+      </article>
+
+      <article class="game-card" data-platform="xbox">
+        <img src="images/main/xbox.webp" alt="Xbox Series X/S" loading="lazy">
+        <h3>Xbox Series X/S</h3>
+      </article>
+
+      <article class="game-card" data-platform="switch">
+        <img src="images/main/switch.webp" alt="Nintendo Switch" loading="lazy">
+        <h3>Nintendo Switch</h3>
+      </article>
+
+      <article class="game-card" data-platform="pc">
+        <img src="images/main/pc.webp" alt="PC" loading="lazy">
+        <h3>PC</h3>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Platform Modal -->
+  <dialog id="platformModal" class="platform-modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close dialog">&times;</button>
+      <div class="modal-header">
+        <img id="modalImage" src="" alt="Platform" class="modal-image">
+      </div>
+      <div class="modal-body">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div id="modalFeatures" class="modal-features"></div>
+      </div>
+    </div>
+  </dialog>
+
+</main>
+
+<footer>
+  <p>
+    <a href="attributions.html">Attributions</a> |
+    <a href="https://github.com/ChissgaN/wdd231" target="_blank">GitHub</a>
+  </p>
+
+  <p>
+    &copy; <span id="year"></span> Jairo Noodli Castro Castillo | Video Game Library
+  </p>
+
+  <p>
+    <a href="https://youtube.com" target="_blank">Project Video</a>
+  </p>
+</footer>
+
+<script src="scripts/date.js"></script>
+
+</body>
+</html>
