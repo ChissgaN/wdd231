@@ -11,7 +11,6 @@ if (storedGames.length > 0) {
   document.getElementById("description").textContent = lastGame.description || "N/A";
 }
 
-// Mobile menu
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 
